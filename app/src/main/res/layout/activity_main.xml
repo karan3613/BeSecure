@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bd"
+    tools:background="@drawable/bd"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/contactbook"
+        android:layout_width="184dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/pngcontactbutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/emergency"
+        android:layout_width="233dp"
+        android:layout_height="229dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hold_call" />
+
+    <TextView
+        android:id="@+id/emergencytext"
+        android:layout_width="364dp"
+        android:layout_height="121dp"
+        android:layout_marginTop="136dp"
+        android:text="Emergency help needed?"
+        android:textAlignment="center"
+        android:textColor="#0D0C0C"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:fontFamily="serif" />
+
+    <TextView
+        android:id="@+id/hold_call"
+        android:layout_width="243dp"
+        android:layout_height="37dp"
+        android:autoText="false"
+        android:text="Just hold the button to call"
+        android:textColor="#161515"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emergencytext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
